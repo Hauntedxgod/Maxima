@@ -51,23 +51,23 @@ public class Homework_3 {
                 }
 
 
-                    for (int i1 = 0; i <= 10; i++) {
-                        for (int j = 0; j <= 10; j++) {
-                            System.out.print((i * 1) * (j * 1));
-                        }
-                        System.out.println();
+                for (int i1 = 0; i <= 10; i++) {
+                    for (int j = 0; j <= 10; j++) {
+                        System.out.print((i * 1) * (j * 1));
                     }
-
-
-                    String str1 = scanner.nextLine();
-                    System.out.println("Меня зову " + str1);
-                    int a2 = scanner.nextInt();
-                    int b1 = scanner.nextInt();
-                    int c1 = scanner.nextInt();
-                    System.out.print("Дата рождения " + a + "." + b + "." + c);
-
-
+                    System.out.println();
                 }
+
+
+                String str1 = scanner.nextLine();
+                System.out.println("Меня зову " + str1);
+                int a2 = scanner.nextInt();
+                int b1 = scanner.nextInt();
+                int c1 = scanner.nextInt();
+                System.out.print("Дата рождения " + a + "." + b + "." + c);
+
+
+            }
 
             }
         }
