@@ -36,26 +36,22 @@ public class Homework_3 {
             System.out.println(c);
 
 
-        for (int i = 1; i > 0; i++) {
-            System.out.println("Введите  число: ");
-            int a1 = 0;
-            int number = scanner.nextInt();
-            a1 = +number;
-            while (true) {
-
-                if (number != -1) {
-                    System.out.println(a1);
-                } else if (number == -1) {
-                    System.out.println(number + a1);
-                    break;
-                }
+        System.out.println("Введите  число: ");
+        int counter = 0;
+        int number = scanner.nextInt();
+        while (true) {
+            counter += number;
+            if (number == -1) {
+                break;
+            }
 
 
-                for (int i1 = 0; i <= 10; i++) {
+
+                for (int i1 = 0; i1 <= 10; i1++) {
                     for (int j = 0; j <= 10; j++) {
-                        System.out.print((i * 1) * (j * 1));
+                        System.out.printf("%4d", j * i1);
                     }
-                    System.out.println();
+                    System.out.println( );
                 }
 
 
@@ -71,7 +67,7 @@ public class Homework_3 {
 
             }
         }
-    }
+
 
 
 
