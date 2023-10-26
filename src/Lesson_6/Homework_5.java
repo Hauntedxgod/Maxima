@@ -39,22 +39,17 @@ public class Homework_5 {
 
         System.out.println("\n Задание №4");
 
+        int sum = 0;
+        while(true){
+            String str1 = scanner.nextLine();
+            if (str1.equals("сумма")){
+                break;
+            }else {
+                sum = sum + Integer.parseInt(str1);
+            }
+            System.out.println(sum);
+        }
 
-        System.out.println("Введите слова сумма ");
-        String c = scanner.nextLine();
-        System.out.println("Введите число 1 ");
-        int a = scanner.nextInt();
-        System.out.println("Число 1 " + a);
-        System.out.println("Введите второе число 2 ");
-        int b = scanner.nextInt();
-        System.out.println("Число 2 " + b);
-        int res;
-        switch (c) {
-            case "Сумма":
-                res = a + b;
-               System.out.println("Общай сумма " + res);
-               break;
-    }
 
 
 
