@@ -2,56 +2,12 @@ package Lesson_6;
 
 public class cat1 {
     String name;
-    int ves;
-    int age;
+    int ves = 5;
+    int age = 12;
     String color;
     String address;
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getVes() {
-        return ves;
-    }
-
-    public void setVes(int ves) {
-        if (ves < 5) {
-            ves = 6;
-        }
-        this.ves = ves;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        if (age < 0){
-            age = 0;
-        }
-        this.age = age;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 
     public cat1(String name) {
         this.name = name;
