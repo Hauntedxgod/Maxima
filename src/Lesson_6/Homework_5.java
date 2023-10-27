@@ -55,7 +55,9 @@ public class Homework_5 {
 
         System.out.println("\n Задание №5");
 
-        int[] array = new int[5];
+        int n = scanner.nextInt();
+
+        int[] array = new int[n];
 
         for (int i = 0; i <array.length ; i++) {
             array[i] = scanner.nextInt();
@@ -75,7 +77,7 @@ public class Homework_5 {
             if (array[i] < max){
                 max = array[i];
         }
-            System.out.println("макстмальное число " + max);
+            System.out.println("макстмальное число " + array[n - 1]);
 
         }
 
