@@ -17,19 +17,23 @@ public class Reader {
     }
 
 
-     void takeBook(int a , String b ){
-
+     boolean takeBook( ){
+         System.out.println("Взял 3 книги");
+         return true;
      }
+
+
 
 //    static {
 //         takeBook("Петров В. В. взял 3 книги: " , "Приключения, Словарь, Энциклопедия");
 //    }
 
 
-    static void returnBook(String c , String d){
-        System.out.println(c);
-        System.out.println(d);
-    }
+   boolean returnBook(){
+        System.out.println("Вернул 3 книги");
+
+       return true;
+   }
 
 //    static {
 //         returnBook("Петров В. В. вернул 3 книги: ","Приключения, Словарь, Энциклопедия");

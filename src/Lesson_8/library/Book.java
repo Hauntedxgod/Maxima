@@ -1,8 +1,12 @@
 package Lesson_8.library;
 
-public class Book  {
+public class Book  extends Reader {
     private String name;
     private String avtor;
+
+    public Book(String fullName, int ticketNumber, String faculty, int dateOfBrith, int number) {
+        super(fullName, ticketNumber, faculty, dateOfBrith, number);
+    }
 
     public String getName() {
         return name;
@@ -16,8 +20,22 @@ public class Book  {
         return avtor;
     }
 
+
+    @Override
+    boolean returnBook() {
+        super.returnBook();
+        return true;
+    }
+
+    @Override
+    boolean takeBook() {
+        return super.takeBook();
+    }
+
     public void setAvtor(String avtor) {
         this.avtor = avtor;
+
+
 
     }
 }
