@@ -8,6 +8,7 @@ public class Reader {
     private int number;
 
 
+
     public Reader(String fullName, int ticketNumber, String faculty, int dateOfBrith, int number) {
         this.fullName = fullName;
         this.ticketNumber = ticketNumber;
@@ -17,16 +18,20 @@ public class Reader {
     }
 
 
-     boolean takeBook( ){
-         System.out.println("Взял 3 книги");
-         return true;
+     public void takeBook(String... nameBook ){
+         System.out.println(getFullName() + "Взял 3 книги");
+         for (int i = 0; i < nameBook.length ; i++) {
+             if (i == nameBook.length - 1){
+                 System.out.println(nameBook[i] + ".");
+             }else {
+                 System.out.println(nameBook[i] + ".");
+             }
+         }
      }
 
 
 
-//    static {
-//         takeBook("Петров В. В. взял 3 книги: " , "Приключения, Словарь, Энциклопедия");
-//    }
+
 
 
    boolean returnBook(){
@@ -35,9 +40,7 @@ public class Reader {
        return true;
    }
 
-//    static {
-//         returnBook("Петров В. В. вернул 3 книги: ","Приключения, Словарь, Энциклопедия");
-//    }
+
 
     public String getFullName() {
         return fullName;
