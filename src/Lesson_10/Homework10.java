@@ -23,90 +23,90 @@ public class Homework10 {
         System.out.println("Размер массива String - " + stringArrayList.size());
 
 
-//        for (String s : stringArrayList) {
-//            System.out.println("Содержимое массива String: " + s);
-//        }
-//        System.out.println("\n Ex 2 ");
-//
-//        ArrayList<String> arrayList = new ArrayList<>();
-//
-//        System.out.println("Введите какие либо выражения: ");
+        for (String s : stringArrayList) {
+            System.out.println("Содержимое массива String: " + s);
+        }
+        System.out.println("\n Ex 2 ");
+
+        ArrayList<String> arrayList = new ArrayList<>();
+
+        System.out.println("Введите какие либо выражения: ");
         Scanner scanner = new Scanner(System.in);
-//        arrayList.add(scanner.nextLine());
-//        arrayList.add(scanner.nextLine());
-//        arrayList.add(scanner.nextLine());
-//        arrayList.add(scanner.nextLine());
-//        arrayList.add(scanner.nextLine());
-//        System.out.println(arrayList);
-//
-//        int str = arrayList.get(0).length();
-//        int index = 0;
-//        for (int i = 0; i < arrayList.size(); i++) {
-//            if (arrayList.get(i).length() > str) {
-//                str = arrayList.get(i).length();
-//                index = i;
-//
-//            }
-//        }
-//        System.out.println("Выведите максимальное значение - " + " " + arrayList.get(index) + " " + str);
-//
-//
-//        ArrayList<String> arrayList1 = new ArrayList<>();
-//        System.out.println("\n Ex 3 " );
-//        System.out.println("Введите какие либо выражения: ");
-//        arrayList1.add(scanner.nextLine());
-//        arrayList1.add(scanner.nextLine());
-//        arrayList1.add(scanner.nextLine());
-//        arrayList1.add(scanner.nextLine());
-//        arrayList1.add(scanner.nextLine());
-//        System.out.println(arrayList1);
-//
-//        int str1 = arrayList1.get(0).length();
-//        int index1 = 0;
-//        for (int i = 0; i < arrayList1.size(); i++) {
-//            if (arrayList1.get(i).length() < str1) {
-//                str1 = arrayList1.get(i).length();
-//                index1 = i;
-//            }
-//        }
-//        System.out.println( "Выведите минимальное значение - " + " "+ arrayList1.get(index1)  + " " +  str1);
-//
-//
-//        System.out.println("\n ex 4 ");
-//        ArrayList<String> stringArrayList1 = new ArrayList<>();
-//        System.out.println("Введите значения: ");
-//        stringArrayList1.add(scanner.nextLine());
-//        stringArrayList1.add(scanner.nextLine());
-//        stringArrayList1.add(scanner.nextLine());
-//        stringArrayList1.add(scanner.nextLine());
-//        stringArrayList1.add(scanner.nextLine());
-//        stringArrayList1.add(scanner.nextLine());
-//        stringArrayList1.add(scanner.nextLine());
-//        stringArrayList1.add(scanner.nextLine());
-//        stringArrayList1.add(scanner.nextLine());
-//        stringArrayList1.add(scanner.nextLine());
-//
-//
-//        for (String s : stringArrayList1) {
-//            System.out.println(s);
-//        }
-//
-//
-//        System.out.println("\n ex 5 ");
-//        ArrayList<String> list =  new ArrayList<>();
-//        for (int i = 0; i <= 5 ; i++) {
-//            list.add(scanner.nextLine());
-//        }
-//        for (int i = 0; i < 13; i++){
-//            String a = list.get(5);
-//            list.remove(5);
-//            list.add(0, a);
-//        }
-//
-//
-//        for (int i = 0; i < list.size() ; i++) {
-//            System.out.println(list.get(i));
-//        }
+        arrayList.add(scanner.nextLine());
+        arrayList.add(scanner.nextLine());
+        arrayList.add(scanner.nextLine());
+        arrayList.add(scanner.nextLine());
+        arrayList.add(scanner.nextLine());
+        System.out.println(arrayList);
+
+        int str = arrayList.get(0).length();
+        int index = 0;
+        for (int i = 0; i < arrayList.size(); i++) {
+            if (arrayList.get(i).length() > str) {
+                str = arrayList.get(i).length();
+                index = i;
+
+            }
+        }
+        System.out.println("Выведите максимальное значение - " + " " + arrayList.get(index) + " " + str);
+
+
+        ArrayList<String> arrayList1 = new ArrayList<>();
+        System.out.println("\n Ex 3 " );
+        System.out.println("Введите какие либо выражения: ");
+        arrayList1.add(scanner.nextLine());
+        arrayList1.add(scanner.nextLine());
+        arrayList1.add(scanner.nextLine());
+        arrayList1.add(scanner.nextLine());
+        arrayList1.add(scanner.nextLine());
+        System.out.println(arrayList1);
+
+        int str1 = arrayList1.get(0).length();
+        int index1 = 0;
+        for (int i = 0; i < arrayList1.size(); i++) {
+            if (arrayList1.get(i).length() < str1) {
+                str1 = arrayList1.get(i).length();
+                index1 = i;
+            }
+        }
+        System.out.println( "Выведите минимальное значение - " + " "+ arrayList1.get(index1)  + " " +  str1);
+
+
+        System.out.println("\n ex 4 ");
+        ArrayList<String> stringArrayList1 = new ArrayList<>();
+        System.out.println("Введите значения: ");
+        stringArrayList1.add(scanner.nextLine());
+        stringArrayList1.add(scanner.nextLine());
+        stringArrayList1.add(scanner.nextLine());
+        stringArrayList1.add(scanner.nextLine());
+        stringArrayList1.add(scanner.nextLine());
+        stringArrayList1.add(scanner.nextLine());
+        stringArrayList1.add(scanner.nextLine());
+        stringArrayList1.add(scanner.nextLine());
+        stringArrayList1.add(scanner.nextLine());
+        stringArrayList1.add(scanner.nextLine());
+
+
+        for (String s : stringArrayList1) {
+            System.out.println(s);
+        }
+
+
+        System.out.println("\n ex 5 ");
+        ArrayList<String> list =  new ArrayList<>();
+        for (int i = 0; i <= 5 ; i++) {
+            list.add(scanner.nextLine());
+        }
+        for (int i = 0; i < 13; i++){
+            String a = list.get(5);
+            list.remove(5);
+            list.add(0, a);
+        }
+
+
+        for (int i = 0; i < list.size() ; i++) {
+            System.out.println(list.get(i));
+        }
 
 
 //        System.out.println("\n ex 6 ");
