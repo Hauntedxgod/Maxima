@@ -1,12 +1,10 @@
 package Lesson_10;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Scanner;
 
-public class Homework10 {
-    public Homework10() {
+public class Homework_10 {
+    public Homework_10() {
     }
 
     public static void main(String[] args) {
