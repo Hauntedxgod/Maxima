@@ -147,7 +147,7 @@ public class Homework_10 {
         printList(array2);
         printList(array3);
     }
-
+//
         public static void printList(ArrayList <Integer> array) {
             System.out.println("new Список ");
             for (int i = 0; i < array.size(); i++) {
