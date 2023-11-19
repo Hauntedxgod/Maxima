@@ -48,7 +48,9 @@ public class Homework_11 {
 //    }
 //
 //    public static ArrayList<String> fix(ArrayList<String> strings) {
-//        strings.remove("Р");
+//        for (int i = 0; i < strings.size(); i++) {
+//            strings.remove("р");
+//        }
 //        for (int i = 0; i < strings.size(); i++) {
 //            strings.add(i + 1, "л");
 //            i++;
