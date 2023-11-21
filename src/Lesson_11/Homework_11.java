@@ -34,28 +34,27 @@ public class Homework_11 {
         System.out.println(stringArrayList);
 
 
-//        System.out.println("\n ex 3 ");
-//
-//
-//        ArrayList<String> strings = new ArrayList<String>();
-//        strings.add("роза");
-//        strings.add("лоза");
-//        strings.add("лира");
-//        strings = fix(strings);
-//        for (String string : strings) {
-//            System.out.println(string);
-//        }
-//    }
-//
-//    public static ArrayList<String> fix(ArrayList<String> strings) {
-//        for (int i = 0; i < strings.size(); i++) {
-//            strings.remove("р");
-//        }
-//        for (int i = 0; i < strings.size(); i++) {
-//            strings.add(i + 1, "л");
-//            i++;
-//        }
-//        return null;
+        System.out.println("\n ex 3 ");
+
+
+        ArrayList<String> strings = new ArrayList<String>();
+        strings.add("роза");
+        strings.add("лоза");
+        strings.add("лира");
+        strings = fix(strings);
+        for (String string : strings) {
+            System.out.println(string);
+        }
+    }
+
+    public static ArrayList<String> fix(ArrayList<String> strings) {
+        for (int i = 0; i < strings.size(); i++) {
+            strings.remove("р");
+        }
+        for (int i = 0; i < strings.size(); i++) {
+            strings.add(i + 1, "л");
+            i++;
+        }
 
 
         System.out.println("\n ex 4 ");
@@ -64,15 +63,17 @@ public class Homework_11 {
         //2. Метод doubleValues должен удваивать слова по принципу:
         //"альфа", "бета", "гамма" -> "альфа", "альфа", "бета", "бета", "гамма", "гамма"
         //3. Выведи результат на экран, каждое значение с новой строки.
+        Scanner scanner = new Scanner(System.in);
         ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i <= 20; i++) {
             System.out.println("Go! ");
             list.add(scanner.nextLine());
         }
         ArrayList<String> result = doubleValues(list);
-        for ( String a : result) {
+        for (String a : result) {
             System.out.println("Result: " + a);
         }
+        return result;
     }
 
     public static ArrayList<String> doubleValues(ArrayList<String> list) {
