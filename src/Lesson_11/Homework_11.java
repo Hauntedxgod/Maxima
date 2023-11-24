@@ -7,31 +7,33 @@ import java.util.Scanner;
 
 public class Homework_11 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        HashSet<String> strings1 = new HashSet<>();
-        for (int i = 1; i <= 5; i++) {
-            strings1.add(scanner.nextLine());
-        }
-        String thirdElement = (String) strings1.toArray()[3];
-        strings1.remove(thirdElement);
-        System.out.println(strings1);
+//        Scanner scanner = new Scanner(System.in);
+//        HashSet<String> strings1 = new HashSet<>();
+//        for (int i = 1; i <= 5; i++) {
+//            strings1.add(scanner.nextLine());
+//        }
+//        String thirdElement = (String) strings1.toArray()[3];
+//        strings1.remove(thirdElement);
+//        System.out.println(strings1);
 
 
         System.out.println("\n ex 2 ");
-
-
         ArrayList<String> stringArrayList = new ArrayList<>();
         stringArrayList.add("мама");
         stringArrayList.add("мыла");
         stringArrayList.add("раму");
-        stringArrayList.add(1, "именно");
         System.out.println(stringArrayList);
-        stringArrayList.add(3, "именно");
-        System.out.println(stringArrayList);
-        stringArrayList.add(5, "именно");
+        ArrayList<String> all = new ArrayList<>();
+        for (int i = 0; i < stringArrayList.size() ; i++) {
+            all.add(stringArrayList.get(i) + "\nИменно");
+
+        }
+        stringArrayList = all;
+        for (String s : stringArrayList) {
+            System.out.println(s);
+        }
 
 
-        System.out.println(stringArrayList);
 
 
         System.out.println("\n ex 3 ");
@@ -55,6 +57,7 @@ public class Homework_11 {
             strings.add(i + 1, "л");
             i++;
         }
+
 
 
         System.out.println("\n ex 4 ");
@@ -83,6 +86,7 @@ public class Homework_11 {
         }
 
         return list;
+
     }
 }
 
