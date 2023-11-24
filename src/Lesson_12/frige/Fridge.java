@@ -66,7 +66,7 @@ public class Fridge {
                 scanner = new Scanner(System.in);
                 String Answer = scanner.nextLine();
                 if (Answer.equals("Да")){
-                    Thread.sleep(1000);
+                    Thread.sleep(10000);
 
                     products.put(product , all + howMany);
                     for (String s : products.keySet()) {
@@ -81,7 +81,7 @@ public class Fridge {
                     break;
                 }
             } else {
-                Thread.sleep(1000);
+                Thread.sleep(10000);
                 products.put(product , howMany);
                 for (String s : products.keySet()) {
                     System.out.println(" Сейчас в холодильнике есть " + products.get(s) + " : " + s );
@@ -90,28 +90,6 @@ public class Fridge {
 
 
 
-//            if (howMany > all) {
-//                System.out.println(product + "Продукта в этом количестве нету." + howMany + "Его количество " + all +
-//                        " его нужно купить ");
-//
-//                products.remove(product, howMany);
-//                orders.put(product, howMany);
-//                System.out.println(all + " этот продукт добавлен в  shopping list " + product);
-//            }
-//            if (howMany < all) {
-//                System.out.println(product + "В холодильнике есть такой продукт" + "его количество " + all);
-//                break;
-//            }
-
-
-//        if ( count > 0) {
-//            System.out.println(name + " этот продукт имеется" + ". Его количество " + count);
-//        }
-//        if ( count <= 0) {
-//            System.out.println(name + " этого продукта нет " + count);
-//            orders.put(name, count);
-//            System.out.println("Не забудьте купить этот продукт - " + name);
-//        }
 
 
         }
