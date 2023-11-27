@@ -7,9 +7,9 @@ public class Animal {
     private String food;
     private String location;
 
-    public String getName() {
-        return name;
-    }
+//    public static String getName() {
+//        return name;
+//    }
 
     public void setName(String name) {
         this.name = name;

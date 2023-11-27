@@ -18,7 +18,7 @@ public class Reader {
     }
 
 
-     public void takeBook(String... nameBook ){
+     public boolean takeBook(String... nameBook ){
          System.out.println(getFullName() + "Взял 3 книги");
          for (int i = 0; i < nameBook.length ; i++) {
              if (i == nameBook.length - 1){
@@ -27,6 +27,7 @@ public class Reader {
                  System.out.println(nameBook[i] + ".");
              }
          }
+         return false;
      }
 
 

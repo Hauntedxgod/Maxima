@@ -3,10 +3,7 @@ package Lesson_12.frige;
 import com.sun.source.tree.CompilationUnitTree;
 
 import java.beans.Introspector;
-import java.util.HashMap;
-import java.util.Random;
-import java.util.Scanner;
-import java.util.SortedMap;
+import java.util.*;
 
 public class Fridge {
     HashMap<String, Integer> products = new HashMap<>();

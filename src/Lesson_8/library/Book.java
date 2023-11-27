@@ -28,8 +28,9 @@ public class Book  extends Reader {
     }
 
     @Override
-    public void takeBook(String... nameBook) {
+    public boolean takeBook(String... nameBook) {
         super.takeBook(nameBook);
+        return false;
     }
 
     public void setAvtor(String avtor) {

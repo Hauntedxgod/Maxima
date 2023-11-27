@@ -48,9 +48,8 @@ public class Homework_10 {
         }
         System.out.println("Выведите максимальное значение - " + " " + arrayList.get(index) + " " + str);
 
-
-        ArrayList<String> arrayList1 = new ArrayList<>();
         System.out.println("\n Ex 3 " );
+        ArrayList<String> arrayList1 = new ArrayList<>();
         System.out.println("Введите какие либо выражения: ");
         arrayList1.add(scanner.nextLine());
         arrayList1.add(scanner.nextLine());
@@ -113,10 +112,14 @@ public class Homework_10 {
 //            lists.add(scanner.nextLine());
 //        }
 //        int b = lists.get(0).length();
-//        for (int i = 0; i < lists.size() ; i++) {
-//            if (lists.get(0).length() > i && lists.get(0).length() < i){
-//                System.out.println(lists.get(0).length() );
+//        int c = lists.get(0).length();
+//        for (String s : lists) {
+//            if( s.length() > b){
+//                s.length() == b
+//            } else  if( s.length() < c){
+//                s.length() == c
 //            }
+//        }
 //        }
 
 

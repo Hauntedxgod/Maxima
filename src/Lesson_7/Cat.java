@@ -1,5 +1,7 @@
 package Lesson_7;
 
+import Lesson_6.cat1;
+
 public class Cat extends Animal {
 
     private String catName;
@@ -39,6 +41,7 @@ public class Cat extends Animal {
         super.eat();
         System.out.println("Кошка ест");
     }
+
 
 
 }

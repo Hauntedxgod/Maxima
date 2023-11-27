@@ -11,7 +11,7 @@ public class Family {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        Map<String, String> map = new HashMap<>();
+        Map<String, String > map = new HashMap<>();
         while (true) {
             String city = reader.readLine();
             if (city.isEmpty()) {
