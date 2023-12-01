@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<cat>
+    <leg>front right</leg>
+    <leg>front left</leg>
+    <leg>back right</leg>
+    <leg>beck left</leg>
+</cat>
