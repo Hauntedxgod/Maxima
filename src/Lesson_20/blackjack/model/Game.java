@@ -54,9 +54,9 @@ public class Game {
                 } else if (player.sumValuesOnHand() == croupier.sumValuesOnHandCroupier()){
                     System.out.println("Ничья - " + player.namePlayers()+ ". " + croupier.name());
                 }
-                if (player.sumValuesOnHand() <= a) {
+                if (player.sumValuesOnHand() <= a && croupier.sumValuesOnHandCroupier() > a) {
                     System.out.println("Игрок " + player.namePlayers() +  " выиграл");
-                }else  if (player.sumValuesOnHand() > a){
+                }else  if (player.sumValuesOnHand() > a && croupier.sumValuesOnHandCroupier() <= a){
                     System.out.println("Вы Проиграли( " + player.namePlayers());
                 }
             }
