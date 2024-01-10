@@ -48,16 +48,16 @@ public class Game {
         int a = 21;
         for (Croupier croupier : croupiersInGame) {
             for (Player player : playersInGame) {
-                if (croupier.sumValuesOnHandCroupier() <= a ) {
+//                if (croupier.sumValuesOnHandCroupier() <= a ) {
+                if (croupier.sumValuesOnHandCroupier() <= a && player.sumValuesOnHand() > a){
                     System.out.println("Выиграл крупье " + croupier.name());
-                    break;
+                } else if (player.sumValuesOnHand() == croupier.sumValuesOnHandCroupier()){
+                    System.out.println("Ничья - " + player.namePlayers()+ ". " + croupier.name());
                 }
                 if (player.sumValuesOnHand() <= a) {
                     System.out.println("Игрок " + player.namePlayers() +  " выиграл");
                 }else  if (player.sumValuesOnHand() > a){
                     System.out.println("Вы Проиграли( " + player.namePlayers());
-                } else if (player.sumValuesOnHand() == croupier.sumValuesOnHandCroupier()){
-                    System.out.println("Ничья - " + player.namePlayers()+ " " + croupier.name());
                 }
             }
         }
