@@ -23,15 +23,17 @@ public class BlackJack {
 
         game.addPlayer(player2);
 
-        Croupier croupier = new Croupier();
+        Croupier croupier = new Croupier("Katrina");
 
         game.addCroupier(croupier);
 
         game.giveTwoRandomCardsEachPlayerOnStart();// Раздаем карты
 
-        game.oneCardIfCroupierNeed();
+
 
         game.oneCardIfPlayerNeed();
+
+        game.oneCardIfCroupierNeed();
 
 
         game.determineWinner();

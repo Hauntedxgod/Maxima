@@ -9,16 +9,19 @@ import java.util.Scanner;
 public class Player {
 
     private String namePlayer;
+    private List<Card> cardOnHands = new ArrayList<>();
 
     public Player(String namePlayer) {
         this.namePlayer = namePlayer;
     }
 
-    public String namePlayers() {
+    public String getNamePlayer() {
         return namePlayer;
     }
 
-    private List<Card> cardOnHands = new ArrayList<>();
+    public void setNamePlayer(String namePlayer) {
+        this.namePlayer = namePlayer;
+    }
 
     public void takeCard(Card card) {
         cardOnHands.add(card);
@@ -43,11 +46,10 @@ public class Player {
         System.out.println("Нужна ли вам еще одна карта " + namePlayer + " ? Сумма ваших карт - " + sumValuesOnHand());
         Scanner scanner = new Scanner(System.in);
         System.out.println("Я понимаю толька yes or no, введите значение");
-//        if (!"yes".equals(scanner.nextLine()) && !"no".equals(scanner.nextLine())) {
-//            return false;
-            if ("yes".equals(scanner.nextLine())) {
+        String answer = scanner.nextLine();
+            if ("yes".equals(answer)) {
                 return true;
-            } else if ("no".equals(scanner.nextLine())) {
+            } else if ("no".equals(answer)) {
                 return false;
             }
             return false;

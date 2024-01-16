@@ -6,11 +6,11 @@ import java.util.List;
 public class Game {
     private List<Player> playersInGame = new ArrayList<>();
     private DeckOfCards deck = new DeckOfCards();
-    private List<Croupier> croupiersInGame = new ArrayList<>();
+    private Croupier croupier;
 
 
     public void addCroupier(Croupier croupier) {
-        croupiersInGame.add(croupier);
+       this.croupier = croupier;
     }
 
     public void addPlayer(Player player) {
@@ -22,9 +22,9 @@ public class Game {
         for (Player player : playersInGame) {
             player.takeCard(deck.getRandomCard());
             player.takeCard(deck.getRandomCard());
-            for (Croupier croupier : croupiersInGame) {
-                croupier.takeCardCroupier(deck.getRandomCard());
-            }
+        }
+        for (int i = 0; i < 2 ; i++) {
+            croupier.takeCard(deck.getRandomCard());
         }
     }
 
@@ -37,29 +37,26 @@ public class Game {
     }
 
     public void oneCardIfCroupierNeed() {
-        for (Croupier croupier : croupiersInGame) {
-            while (croupier.isNeedCardCroupier()) {
-                croupier.takeCardCroupier(deck.getRandomCard());
+            while (croupier.isNeedCard()) {
+                croupier.takeCard(deck.getRandomCard());
             }
         }
-    }
+
 
     public void determineWinner() {
         int a = 21;
-        for (Croupier croupier : croupiersInGame) {
             for (Player player : playersInGame) {
 //                if (croupier.sumValuesOnHandCroupier() <= a ) {
-                if (croupier.sumValuesOnHandCroupier() <= a && player.sumValuesOnHand() > a){
-                    System.out.println("Выиграл крупье " + croupier.name());
-                } else if (player.sumValuesOnHand() == croupier.sumValuesOnHandCroupier()){
-                    System.out.println("Ничья - " + player.namePlayers()+ ". " + croupier.name());
+                if (croupier.sumValuesOnHand() <= a && player.sumValuesOnHand() > a){
+                    System.out.println("Выиграл крупье " + croupier.getNamePlayer());
+                } else if (player.sumValuesOnHand() == a && a == croupier.sumValuesOnHand()){
+                    System.out.println("Ничья - " + player.getNamePlayer()+ ". " + croupier.getNamePlayer());
                 }
-                if (player.sumValuesOnHand() <= a && croupier.sumValuesOnHandCroupier() != a) {
-                    System.out.println("Игрок " + player.namePlayers() +  " выиграл");
-                }else  if (player.sumValuesOnHand() != a && croupier.sumValuesOnHandCroupier() <= a){
-                    System.out.println("Вы Проиграли( " + player.namePlayers());
+                if (player.sumValuesOnHand() <= a && croupier.sumValuesOnHand() != a) {
+                    System.out.println("Игрок " + player.getNamePlayer() +  " выиграл");
+                }else  if (player.sumValuesOnHand() != a && croupier.sumValuesOnHand() <= a){
+                    System.out.println("Вы Проиграли " + player.getNamePlayer());
                 }
-            }
         }
     }
 }
